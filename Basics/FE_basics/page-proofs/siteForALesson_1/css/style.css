@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header>> */
+header {
+    background-color: #1ABC9C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+}
+.header_menu_button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.header_menu_button:last-child {
+    margin-right: 0;
+}
+
+.header_socialNetworks {
+    display: flex;
+    align-items: center;
+}
+.header_socialNetworks_link {
+    display: flex;
+    margin-right: 20px;
+}
+.header_socialNetworks_link:last-child {
+    margin-right: 0;
+}
+/* Header<< */
+
+/* About us>> */
+.aboutUs {
+    display: flex;
+    justify-content: space-around;
+}
+.aboutUs_pctr {
+    width: 50%;
+    min-height: 695px;
+    background-image: url(../images/head_pictr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.aboutUS_info {
+    width: 50%;
+    padding: 218px 90px 205px 80px;
+}
+.aboutUS_info h1 {
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    color: #000000;
+}
+.aboutUS_info h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: justify;
+    color: #000000;
+    margin-top: 25px;
+}
+/* About us<< */
+
+/* Our projects>> */
+.ourProjects {
+    background-color: #DCFFEB;
+    min-height: 730px;
+    padding: 125px 65px;
+}
+.ourProjects_nameSection {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    color: #000000;
+}
+.ourProjects_cards {
+    display: flex;
+    justify-content: space-between;
+}
+.ourProjects_cards_item {
+    background-image: url(../images/project.jpg);
+    width: 436px;
+    
+    height: 376px;
+    margin-right: 37px;
+    margin-top: 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-end;
+
+}
+.ourProjects_cards_item:last-child {
+    margin-right: 0;
+}
+.ourProjects_cards_item_overlay {
+    background-color: rgba(0, 0, 0, 0.38);
+    width: 100%;
+    transform: scaleY(0);
+    transition-property: transform;
+    transform-origin: bottom;
+    transition-duration: 0.5s;
+    padding: 25px 0px 15px 35px;
+}
+.ourProjects_cards_item:hover .ourProjects_cards_item_overlay{
+    transform: scaleY(1);
+}
+.ourProjects_cards_item_overlay_name {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+.ourProjects_cards_item_overlay_name_inform {
+    margin-top: 16px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+/* Our projects<< */
+
+/* contacts>> */
+.contacts {
+    padding: 90px 70px;
+}
+.contacts h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    color: #000000;
+
+}
+.contacts_container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 55px;
+}
+.contacts_items {
+    text-align: center;
+}
+.contacts_items_links {
+    display: flex; 
+    flex-direction: column;
+    margin-top: 25px;
+}
+.contacts_items_links a {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+.contacts_items h2 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #999999;
+    margin-top: 35px;
+}
+.contacts_items h3 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+    margin-top: 25px;
+}
+.contacts_items_infoEmail {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #F7654A;
+    text-decoration: none;
+    margin-top: 25px;
+    display: block;
+    
+}
+/* contacts<< */

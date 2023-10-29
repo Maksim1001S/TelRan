@@ -1,0 +1,11 @@
+.DetailedProduct {
+  width: 80%;
+  border: 1px solid grey;
+  border-radius: 30px;
+  margin: 25px auto;
+  padding: 20px;
+}
+
+.DetailedProduct img {
+  margin-top: 20px;
+}

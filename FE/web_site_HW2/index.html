@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    />
+
+    <body>
+        <header class="header">
+            <section class="top_header">
+                <div class="top_header_menu">
+                    <a class="top_header_menu_logo" href="index.html"
+                        ><img src="./images/header_logo.svg" alt="logo"
+                    /></a>
+                    <ul class="top_header_menu_nav">
+                        <li class="top_header_menu_nav_element">Главная</li>
+                        <li class="top_header_menu_nav_element">Курсы</li>
+                        <li class="top_header_menu_nav_element">Расписание</li>
+                        <li class="top_header_menu_nav_element">
+                            Преподаватели
+                        </li>
+                        <li class="top_header_menu_nav_element">Рассылка</li>
+                        <li class="top_header_menu_nav_element">Контакты</li>
+                    </ul>
+                    <a href="" class="top_header_goToProfile_btn"
+                        >Зайти в кабинет</a
+                    >
+                    <div class="header_menu_btn_container">
+                        <div class="header_menu_btn_container_button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="top_header_preview">
+                    <h1 class="top_header_preview_title">
+                        Курс по ремонту <br />
+                        велосипедных вилок
+                    </h1>
+                    <ul class="top_header_preview_time">
+                        <li class="top_header_preview_time_element">
+                            <div class="lds-ripple">
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <h2 id="days" class="countDown">00</h2>
+                            <small>Дней</small>
+                        </li>
+                        <li class="top_header_preview_time_element">
+                            <div class="lds-ripple">
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <h2 id="hours">00</h2>
+                            <small>Часов</small>
+                        </li>
+                        <li class="top_header_preview_time_element">
+                            <div class="lds-ripple">
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <h2 id="minutes">00</h2>
+                            <small>Минут</small>
+                        </li>
+                        <li class="top_header_preview_time_element">
+                            <div class="lds-ripple">
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <h2 id="seconds">00</h2>
+                            <small>Секунд</small>
+                        </li>
+                        <div class="preloader" id="preloader"></div>
+                    </ul>
+                </div>
+            </section>
+            <section class="under_header">
+                <a class="under_header_btn" href="#">Заказать курс</a>
+                <div class="under_header_students">
+                    <div class="under_header_students_total">
+                        <p class="under_header_students_total_text">
+                            Учеников всего:
+                        </p>
+                        <p class="under_header_students_total_number">200</p>
+                    </div>
+                    <div class="under_header_students_finished">
+                        <p class="under_header_students_finished_text">
+                            Успешно закончили курс:
+                        </p>
+                        <p class="under_header_students_finished_number">190</p>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <section class="AboutUs">
+            <img
+                class="AboutUs_img"
+                src="./images/aboutUs_img.jpg"
+                alt="image about our work"
+            />
+            <div class="AboutUs_info">
+                <h2 class="AboutUs_info_title">Чем мы занимаемся?</h2>
+                <p class="AboutUs_info_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Eget neque, dignissim et feugiat elit augue in suspendisse
+                    egestas. Dictum vestibulum mi et sed nunc, orci fermentum
+                    vestibulum, morbi. Et neque, adipiscing sapien sem senectus
+                    praesent aenean consequat. Aenean facilisi turpis aliquet
+                    fringilla. Nunc sem felis sed interdum feugiat mattis elit,
+                    sollicitudin. Quam pharetra rhoncus risus, cursus id
+                    elementum aliquet. Nullam turpis arcu malesuada arcu
+                    interdum placerat nisi, lobortis.
+                </p>
+            </div>
+        </section>
+        <section class="weProvide">
+            <h2 class="weProvide_title">Получите профессию прямо сейчас</h2>
+            <ul class="weProvide_container">
+                <li class="weProvide_container_card">
+                    <img
+                        src="./images/skills_img1.png"
+                        alt="picture about our skills"
+                        class="weProvide_container_card_img"
+                    />
+                    <h3 class="weProvide_container_card_titel">
+                        Только практические<br />
+                        навыки в работе
+                    </h3>
+                    <p class="weProvide_container_card_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Netus eget velit quisque accumsan amet tortor. Velit,
+                        volutpat egestas fringilla mi porttitor tempus. Placerat
+                        dui.
+                    </p>
+                </li>
+                <li class="weProvide_container_card">
+                    <img
+                        src="./images/skills_img2.png"
+                        alt="picture about our skills"
+                        class="weProvide_container_card_img"
+                    />
+                    <h3 class="weProvide_container_card_titel">
+                        Работа на самом<br />
+                        современном оборудовании
+                    </h3>
+                    <p class="weProvide_container_card_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Netus eget velit quisque accumsan amet tortor. Velit,
+                        volutpat egestas fringilla mi porttitor tempus. Placerat
+                        dui.
+                    </p>
+                </li>
+                <li class="weProvide_container_card">
+                    <img
+                        src="./images/skills_img3.png"
+                        alt="picture about our skills"
+                        class="weProvide_container_card_img"
+                    />
+                    <h3 class="weProvide_container_card_titel">
+                        Сертификация<br />
+                        по окончании обучения
+                    </h3>
+                    <p class="weProvide_container_card_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Netus eget velit quisque accumsan amet tortor. Velit,
+                        volutpat egestas fringilla mi porttitor tempus. Placerat
+                        dui.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="partners">
+            <h2 class="partners_title">Партнеры - топовые бренды</h2>
+            <ul class="partners_cards">
+                <li class="partners_cards_element">
+                    <img src="./images/partner_logo.jpg" alt="logo partner" />
+                </li>
+                <li class="partners_cards_element">
+                    <img src="./images/partner_logo.jpg" alt="logo partner" />
+                </li>
+                <li class="partners_cards_element">
+                    <img src="./images/partner_logo.jpg" alt="logo partner" />
+                </li>
+                <li class="partners_cards_element">
+                    <img src="./images/partner_logo.jpg" alt="logo partner" />
+                </li>
+                <li class="partners_cards_element">
+                    <img src="./images/partner_logo.jpg" alt="logo partner" />
+                </li>
+                <li class="partners_cards_element">
+                    <img src="./images/partner_logo.jpg" alt="logo partner" />
+                </li>
+                <li class="partners_cards_element">
+                    <img src="./images/partner_logo.jpg" alt="logo partner" />
+                </li>
+                <li class="partners_cards_element">
+                    <img src="./images/partner_logo.jpg" alt="logo partner" />
+                </li>
+            </ul>
+        </section>
+
+        <section class="teachers">
+            <h2 class="teachers_title">Ваши преподаватели</h2>
+            <ul class="teachers_cards">
+                <li class="teachers_cards_card">
+                    <img
+                        src="./images/avatar1.png"
+                        alt="avatar of person"
+                        class="teachers_cards_card_img"
+                    />
+                    <h3 class="teachers_cards_card_title">Дмитрий Иванов</h3>
+                    <p class="teachers_cards_card_text">Специалист по вилкам</p>
+                    <a href="" class="teachers_cards_card_moreInf_btn"
+                        >Биография</a
+                    >
+                </li>
+                <li class="teachers_cards_card">
+                    <img
+                        src="./images/avatar2.png"
+                        alt="avatar of person"
+                        class="teachers_cards_card_img"
+                    />
+                    <h3 class="teachers_cards_card_title">Дмитрий Иванов</h3>
+                    <p class="teachers_cards_card_text">Специалист по вилкам</p>
+                    <a href="" class="teachers_cards_card_moreInf_btn"
+                        >Биография</a
+                    >
+                </li>
+                <li class="teachers_cards_card">
+                    <img
+                        src="./images/avatar3.png"
+                        alt="avatar of person"
+                        class="teachers_cards_card_img"
+                    />
+                    <h3 class="teachers_cards_card_title">Дмитрий Иванов</h3>
+                    <p class="teachers_cards_card_text">Специалист по вилкам</p>
+                    <a href="" class="teachers_cards_card_moreInf_btn"
+                        >Биография</a
+                    >
+                </li>
+            </ul>
+        </section>
+
+        <section class="subscription">
+            <h2 class="subscription_title">Статьи каждую неделю</h2>
+            <p class="subscription_text">
+                Больше 90% учеников прошли полный курс и смогли перебрать свою
+                первую вилку
+            </p>
+            <form class="subscription_form">
+                <input
+                    class="subscription_form_email_input"
+                    type="email"
+                    placeholder="E-mail"
+                    name="subscription_email"
+                />
+                <button class="subscription_form_send_btn" name="send_btn">
+                    Подписаться
+                </button>
+            </form>
+            <ul class="subscription_socials">
+                <li class="subscription_socials_elem">
+                    <a href=""
+                        ><img src="./images/vk.svg" alt="vk social network"
+                    /></a>
+                </li>
+                <li class="subscription_socials_elem">
+                    <a href=""
+                        ><img
+                            src="./images/youtube.svg"
+                            alt="youtube social network"
+                    /></a>
+                </li>
+                <li class="subscription_socials_elem">
+                    <a href=""
+                        ><img
+                            src="./images/facebook.svg"
+                            alt="facebook social network"
+                    /></a>
+                </li>
+                <li class="subscription_socials_elem">
+                    <a href=""
+                        ><img
+                            src="./images/instagram.svg"
+                            alt="instagram social network"
+                    /></a>
+                </li>
+            </ul>
+        </section>
+
+        <script src="./script.js"></script>
+    </body>
+</html>

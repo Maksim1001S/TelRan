@@ -1,0 +1,36 @@
+* {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.products_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0px 100px;
+}
+.userCard {
+    width: 200px;
+    background: #ffffff;
+    box-shadow: 0px 0px 28px rgba(87, 87, 87, 0.35);
+    border-radius: 27px;
+    padding: 20px;
+}
+.userCard_avatar {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.userCard_name {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+}
+.userCard_email {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 29px;
+    color: #000;
+}

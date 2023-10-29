@@ -1,0 +1,9 @@
+.change_btn {
+    background-color: green;
+}
+.card {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    width: 200px;
+}

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "ABeeZee", sans-serif;
+}
+.actual_title {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 150%;
+    text-align: center;
+    color: #00868a;
+}
+.actual_container {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 60px;
+}
+.actual_container_card {
+    background: #00868a;
+    width: 306px;
+    height: 343px;
+}
+.actual_container_card_img {
+    width: 100%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.actual_container_card_info_text {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 150%;
+    color: #ffffff;
+}

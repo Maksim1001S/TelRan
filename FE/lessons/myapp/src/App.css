@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.products_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+.product {
+  display: flex;
+  border: 1px solid #000;
+  padding: 10px;
+  gap: 20%;
+}
+.cart_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+.cart_count {
+  display: flex;
+  gap: 5px;
+}
+.product_cart {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #000;
+  padding: 10px;
+}
+.close {
+  cursor: pointer;
+}
+.clear_btn {
+  border: 1px solid #000;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+}

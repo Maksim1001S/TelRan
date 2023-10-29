@@ -1,0 +1,12 @@
+.cart_container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.cart_product {
+    width: 200px;
+    height: 300px;
+}
+.cart_product img {
+    width: 100%;
+}

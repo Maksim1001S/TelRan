@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* header_menu */
+.header_menu {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_menu_nav {
+    display: flex;
+    gap: 40px;
+}
+.header_menu_link {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+}
+.header_menu_searchInput {
+    background: #ffffff;
+    border: 1px solid #d7dadd;
+    border-radius: 4px;
+    padding: 12px 16px;
+    width: 380px;
+}
+.header_menu_iconsBlock {
+    display: flex;
+}
+.header_menu_fevorite {
+    display: flex;
+    border-right: 1px solid #dadbdd;
+    padding-right: 40px;
+}
+.header_menu_fevorite p {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+    margin-left: 8px;
+}
+
+.header_menu_productCard {
+    display: flex;
+    margin-left: 40px;
+}
+.header_menu_productCard p {
+    margin-left: 9px;
+    background: #03cea4;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+/* header_banner */
+.header_banner {
+    background: #17696a;
+    padding: 9px 0px;
+}
+.header_banner_container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.header_banner_container img {
+    cursor: pointer;
+}
+.header_banner_container img:nth-child(1) {
+    transform: rotate(180deg);
+}
+.header_banner_container p {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+.header_banner_container p a {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+    color: #ffffff;
+    margin-left: 4px;
+}
+
+/* new_collection */
+.new_collection {
+    background-image: url(./media/new_collection_bg_image.png);
+    height: 800px;
+    background-position: center;
+}
+.new_collection_container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding-top: 140px;
+}
+.new_collection_container h1 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1e212c;
+}
+.new_collection_container h2 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    color: #1e212c;
+    margin-top: 12px;
+    margin-bottom: 60px;
+}
+.new_collection_container a {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    padding: 20px 40px;
+    border: 1px solid #17696a;
+    border-radius: 4px;
+}
+.new_collection_container a:nth-child(3) {
+    color: #17696a;
+}
+.new_collection_container a:nth-child(4) {
+    color: #fff;
+    background: #17696A;
+    margin-left: 24px;
+}
+
+/* new_arrivals */
+.new_arrivals {
+    text-align: center;
+}
+.new_arrivals_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    text-align: start;
+}
+
+.imgElem {
+    background-position: center;
+    background-size: contain;
+    height: 238px;
+}
+
+.season_offers {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 500px);
+}
+
+.season_offers div:nth-child(1) {
+    background-image: url("./media/bg_image.png");
+    background-position: center;
+    background-size: contain;
+    grid-column: 1 / 2 span;
+}
+.season_offers div:nth-child(2) {
+    background-image: url("./media/bg_image2.png");
+    background-position: center;
+    background-size: contain;
+    grid-column: 3 / 6;
+    grid-row: 1 / 2;
+}
+.season_offers div:nth-child(3) {
+    background-image: url("./media/bg_image3.png");
+    background-position: center;
+    background-size: contain;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+.season_offers div:nth-child(4) {
+    background-image: url("./media/bg_image4.png");
+    background-position: center;
+    background-size: contain;
+    grid-column: 4 / 6;
+    grid-row: 2 / 3;
+}
+
+/* CATEGORIES */
+.popular_categories {
+    margin-top: 180px;
+}
+.popular_categories_title {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1e212c;
+    text-align: center;
+}
+.popular_categories_container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 1230px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    gap: 30px;
+}
+.popular_categories_container_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.popular_categories_container_card_title {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1e212c;
+    margin-top: 24px;
+}
+.popular_categories_container_card_img {
+    width: 100%;
+}

@@ -1,0 +1,647 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-family: "Merriweather", serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+html,
+body {
+    overflow-x: hidden;
+}
+.wrapper {
+    max-width: 1120px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 10px;
+}
+/* HEADER */
+.header {
+    background: #ebebeb;
+}
+.header_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px;
+    position: relative;
+    z-index: 1000;
+}
+.header_menu_bg {
+    background: #fff;
+}
+.header_menu_logo {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.header_menu_logo_img {
+    width: 130px;
+    height: 82px;
+}
+.header_menu_logo_name {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 50px;
+    color: #2661b8;
+}
+.header_menu_nav {
+    display: flex;
+    gap: 68px;
+}
+.header_menu_nav_show_Btn {
+    background-image: url(./images/menu_icon.png);
+    width: 72px;
+    height: 72px;
+    display: none;
+    cursor: pointer;
+}
+.header_menu_nav_link {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #222222;
+    position: relative;
+    transition: color 0.3s ease-out;
+}
+.header_menu_nav_link::after {
+    display: block;
+    content: "";
+    background-color: #2661b8;
+    height: 1px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    transition: width 0.2s ease-in-out;
+    transform: translateX(-50%);
+}
+.header_menu_nav_link:hover {
+    color: #2661b8;
+}
+.header_menu_nav_link:hover::after {
+    width: 100%;
+}
+.header_preview {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    max-width: 1140px;
+}
+.header_preview_name {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33px;
+    color: #bdbdbd;
+}
+.header_preview_title {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+    color: #333333;
+    margin-top: 40px;
+}
+.header_preview_cards {
+    margin-top: 102px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.header_preview_cards_element {
+    height: 360px;
+    background-image: url(./images/our_specialization.png);
+    position: relative;
+    padding: 45px;
+    display: flex;
+    align-items: end;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+.header_preview_cards_element::after {
+    z-index: 10;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;
+    color: #ffffff;
+    content: "Accounting service";
+    transition: all 0.3s ease-out;
+}
+.header_preview_cards_element::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.65;
+    box-sizing: border-box;
+    transition: all 0.5s ease-out;
+}
+.header_preview_cards_element:hover::before {
+    background: linear-gradient(
+            0deg,
+            rgba(38, 97, 184, 0.49),
+            rgba(38, 97, 184, 0.49)
+        ),
+        url(image.png);
+}
+/* HEADER */
+
+/* ABOUT US */
+.About_us {
+    display: flex;
+    max-width: 1110px;
+    gap: 30px;
+    justify-content: space-between;
+    margin: 140px auto;
+}
+.About_us_info {
+    text-align: start;
+    width: 445px;
+}
+.About_us_info_name {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33px;
+    color: #bdbdbd;
+}
+.About_us_info_title {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+    color: #333333;
+    margin-top: 40px;
+}
+.About_us_info_title span {
+    color: #2661b8;
+}
+.About_us_info_text {
+    margin-top: 60px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+.About_us_OurCases {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 255px);
+    gap: 30px;
+}
+.About_us_OurCases_card {
+    background: #ebebeb;
+    padding: 30px 108px 40px 30px;
+    transition: all 0.5s ease-out;
+}
+.About_us_OurCases_card:hover {
+    background: #2661b8;
+}
+.About_us_OurCases_card:hover .About_us_OurCases_card_title {
+    color: #fff;
+}
+.About_us_OurCases_card:hover .About_us_OurCases_card_text {
+    color: #fff;
+}
+.About_us_OurCases_card:hover .About_us_OurCases_card_link {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+.About_us_OurCases_card_title {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 66px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    transition: all 0.5s ease-out;
+}
+.About_us_OurCases_card_text {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 47px;
+    width: 110px;
+    transition: all 0.5s ease-out;
+}
+.About_us_OurCases_card_link {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    border-bottom: 1px solid #2661b8;
+    color: #2661b8;
+    transition: all 0.5s ease-out;
+    transition: padding-bottom 0.25s ease-out;
+}
+.About_us_OurCases_card_link:hover {
+    padding-bottom: 5px;
+    border-bottom-width: 2px;
+}
+/* ABOUT US */
+
+/* CONTACT */
+.contact {
+    background-image: url(./images/contact_bg.png);
+    padding: 140px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.contact_container_information {
+    width: 440px;
+}
+.contact_container_information_title {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+    color: #ffffff;
+}
+.contact_container_information_text {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+    margin-top: 60px;
+}
+.contact_container_information_contacts {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.contact_container_information_contacts_telephone {
+    display: flex;
+    gap: 12px;
+}
+.contact_container_information_contacts_telephone a {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 29px;
+    color: #ffffff;
+    width: 100%;
+    transition: all 0.2s ease-out;
+}
+.contact_container_information_contacts_telephone path {
+    transition: all 0.2s ease-out;
+}
+.contact_container_information_contacts_telephone:hover a {
+    color: #2661b8;
+}
+.contact_container_information_contacts_telephone:hover path {
+    fill: #2661b8;
+}
+.contact_container_information_contacts_email {
+    display: flex;
+    gap: 16px;
+}
+.contact_container_information_contacts_email a {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 29px;
+    color: #ffffff;
+    transition: all 0.2s ease-out;
+}
+.contact_container_information_contacts_email path {
+    transition: all 0.2s ease-out;
+}
+.contact_container_information_contacts_email:hover a {
+    color: #2661b8;
+}
+.contact_container_information_contacts_email:hover path {
+    fill: #2661b8;
+}
+.contact_container_feedback {
+    max-width: 540px;
+}
+.contact_container_feedback_form {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.contact_container_feedback_form p {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+}
+.contact_container_feedback_form_name {
+    display: flex;
+    gap: 30px;
+}
+.contact_container_feedback_form_name input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 8px;
+    padding-top: 18px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 29px;
+    color: #bdbdbd;
+}
+.contact_container_feedback_form_name input::placeholder {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 29px;
+    color: #bdbdbd;
+}
+.contact_container_feedback_form_name input:focus-visible {
+    outline: none;
+}
+.contact_container_feedback_form_message {
+    margin-top: 35px;
+    width: 100%;
+}
+.contact_container_feedback_form_message input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding-top: 18px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 29px;
+    color: #bdbdbd;
+    width: 100%;
+    padding-bottom: 84px;
+}
+.contact_container_feedback_form_message input::placeholder {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 29px;
+    color: #bdbdbd;
+    display: flex;
+}
+.contact_container_feedback_form_message input:focus-visible {
+    outline: none;
+}
+.contact_container_feedback_form_btn_send {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #ffffff;
+    background: #2661b8;
+    width: 270px;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+    margin-top: 50px;
+    transition: all 0.2s ease-out;
+}
+.contact_container_feedback_form_btn_send:hover {
+    font-size: 20px;
+    background: #3773cc;
+}
+/* CONTACT */
+
+/* FOOTER */
+footer {
+    height: 159px;
+
+    display: flex;
+    align-items: center;
+    padding-left: 33px;
+}
+footer p {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+}
+/* FOOTER */
+
+/* Media queries */
+@media (max-width: 980px) {
+    /* HEADER */
+    .wrapper {
+        max-width: 980px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .header_menu_nav_show_Btn {
+        display: block;
+    }
+    .header_menu_nav {
+        position: absolute;
+        flex-direction: column;
+        right: 0;
+        top: 100%;
+        background-color: #ffffff;
+        transform: translateX(100%);
+        transition: transform 0.6s;
+        gap: 35px;
+        padding: 30px 20px 30px 30px;
+        filter: drop-shadow(-11px 17px 8px rgba(0, 0, 0, 0.068));
+        z-index: -1;
+    }
+    .header_menu_nav.active {
+        transform: translateX(0);
+    }
+    .header_preview_name {
+        display: none;
+    }
+    .header_preview_cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .header_preview_cards_element {
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+    }
+    /* ABOUT US */
+    .About_us {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .About_us_info {
+        width: auto;
+    }
+    .About_us_info_name {
+        display: none;
+    }
+    .About_us_OurCases {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 120px);
+        width: 100%;
+    }
+    .About_us_OurCases_card {
+        display: flex;
+        align-items: center;
+        padding: 40px 60px 40px 40px;
+    }
+    .About_us_OurCases_card_text {
+        margin: 0 auto;
+    }
+    /* CONTACT */
+    .contact_container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact_container_information {
+        width: 100%;
+    }
+    .contact_container_feedback {
+        max-width: none;
+        width: 100%;
+    }
+    .contact_container_feedback_form_name {
+        width: 100%;
+    }
+    .contact_container_feedback_form_name_firstname {
+        width: 50%;
+    }
+    .contact_container_feedback_form_name_firstname input {
+        width: 100%;
+    }
+    .contact_container_feedback_form_name_lastname {
+        width: 50%;
+    }
+    .contact_container_feedback_form_name_lastname input {
+        width: 100%;
+    }
+    .contact_container_information_contacts {
+        justify-content: start;
+        gap: 68px;
+    }
+}
+@media (max-width: 640px) {
+    .wrapper {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .header_menu_logo_img {
+        scale: 0.7;
+    }
+    .header_menu_nav_show_Btn {
+        scale: 0.7;
+    }
+    .header_menu_nav_link {
+        font-size: 10px;
+    }
+    .header_preview_title {
+        font-size: 35px;
+    }
+    .header_preview_cards_element::after {
+        font-size: 20px;
+    }
+    .About_us_info_title {
+        font-size: 35px;
+    }
+    .About_us_info_text {
+        font-size: 15px;
+    }
+    .About_us_OurCases_card_title {
+        font-size: 45px;
+    }
+    .About_us_OurCases_card_text {
+        font-size: 12px;
+    }
+    .contact_container_information_title {
+        font-size: 40px;
+    }
+    .contact_container_information_contacts_telephone a {
+        font-size: 18px;
+    }
+    .contact_container_information_contacts_email a {
+        font-size: 18px;
+    }
+}
+@media (max-width: 500px) {
+    .wrapper {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .About_us_OurCases_card {
+        padding: 10px 30px 10px 20px;
+    }
+    .contact_container_information_title {
+        font-size: 35px;
+    }
+    .contact_container_information_text {
+        font-size: 15px;
+    }
+    .contact_container_information_contacts {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .contact_container_information_contacts_telephone {
+        gap: 30px;
+        align-items: center;
+    }
+    .contact_container_information_contacts_email {
+        gap: 30px;
+        align-items: center;
+    }
+    .contact_container_information_contacts_telephone svg{
+        width: 40px;
+        height: 50px;
+    }
+    .contact_container_information_contacts_telephone a {
+        font-size: 25px;
+    }
+    .contact_container_information_contacts_email a {
+        font-size: 25px;
+    }
+    .contact_container {
+        gap: 60px;
+    }
+    .contact_container_feedback_form {
+        align-items: center;
+    }
+}

@@ -1,0 +1,48 @@
+.SearchPage {
+  width: 95%;
+  border: 2px solid red;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+
+.SearchPage input {
+  width: 350px;
+  height: 60px;
+  border-radius: 40px;
+  border: 1px solid grey;
+  background: rgba(128, 128, 128, 0.3);
+  color: #000;
+  text-align: center;
+}
+
+.SearchPage button {
+  width: 180px;
+  height: 45px;
+  background-color: #398fb1;
+  border-radius: 20px;
+  border: none;
+  margin-top: 25px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.SearchPage button:disabled {
+  background-color: grey;
+}
+
+.searchResults {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+.searchResults a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+  color: #000;
+}
